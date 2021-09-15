@@ -1,0 +1,14 @@
+div{
+    background-color: aqua;
+}
+table, td{
+    border: 1px solid black;
+    text-align: center;
+    background-color: rgba(202, 176, 29,0.5);
+    font-size: large;
+}
+body
+{
+    background-color: coral;
+    letter-spacing: 20px;
+}

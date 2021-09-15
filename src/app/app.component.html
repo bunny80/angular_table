@@ -1,0 +1,31 @@
+<h1>Sample Data</h1>
+<div class="d-flex justify-content-center">
+<!-- <div class="spinner-border" role="status" >
+    <span class="sr-only" id="loading">Loading...</span>
+</div> -->
+</div>
+<table class="table" id='tab'>
+    <thead>
+    <tr>
+        <th scope="col">userId</th>
+        <th scope="col">id</th>
+        <th scope="col">Title</th>
+        <th scope="col">Body</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let e of li|paginate:{
+      itemsPerPage:10,
+      currentPage:page,
+      totalItems:totalpage
+    }">
+        <td>{{ e.userId }}</td>
+        <td>{{ e.id }}</td>
+        <td>{{ e.title }}</td>
+        <td>{{ e.body }}</td>
+        
+    </tr>
+    </tbody>
+</table>   
+<pagination-controls (pageChange)="page=$event"></pagination-controls>
+ 
